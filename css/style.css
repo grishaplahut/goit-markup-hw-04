@@ -101,7 +101,37 @@ a {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  display: inline-flex;
+  align-items: center;
 }
+
+.contact-links-icons {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+/* ПСЕВДОЭЛЕМЕНТЫ */
+
+/*
+.contact-links-mail::before,
+.contact-links-phone::before {
+  content: "";
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+.contact-links-mail::before {
+  background-image: url(../images/all-icons/mail.svg);
+  width: 16px;
+  height: 12px;
+}
+
+.contact-links-phone::before {
+  background-image: url(../images/all-icons/smartphone.svg);
+  width: 10px;
+  height: 16px;
+}
+*/
 
 /* изменение цвета при наведении */
 .nav-links:focus,
@@ -181,6 +211,23 @@ body {
 .our-value-parts + .our-value-parts {
   margin-left: 50px;
 }
+
+.our-value-container-for-icon {
+  background-color: var(--very-light-grey);
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-value-icons {
+  width: 70px;
+  height: 70px;
+}
+
 .our-value-headers {
   font-style: normal;
   font-weight: 700;
@@ -293,29 +340,30 @@ body {
   margin-left: 10px;
 }
 
-.socialmedia-parts {
+.socialmedia-links {
   width: 44px;
   height: 44px;
-  background-color: white;
+  color: #afb1b8;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.socialmedia-parts:hover {
+.socialmedia-links:hover {
   background-color: var(--blue);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  color: white;
 }
 
 .socialmedia-icons {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
 .socialmedia-icons:hover {
-  fill: #fff;
+  fill: currentColor;
 }
 
 /* Наши клиенты */
@@ -332,6 +380,38 @@ body {
 .our-clients-section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.our-clients-list {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.our-clients-parts + .our-clients-parts {
+  margin-left: 30px;
+}
+
+.our-clients-links {
+  width: 170px;
+  height: 92px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-clients-links:hover {
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  color: var(--blue);
+}
+
+.our-clients-icons {
+  fill: currentColor;
 }
 
 /* футтер */
@@ -394,6 +474,61 @@ footer {
 .footer-contact-links:focus,
 .footer-contact-links:hover {
   color: var(--blue);
+}
+
+.footer-parts {
+  display: flex;
+  align-items: baseline;
+}
+
+.subscribe-footer-part {
+  margin-left: 70px;
+}
+
+.subscribe-header {
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.socialmedia-list-footer {
+  display: flex;
+}
+
+.socialmedia-parts-footer + .socialmedia-parts-footer {
+  margin-left: 10px;
+}
+
+.socialmedia-links-footer {
+  background-color: #43444d;
+  width: 44px;
+  height: 44px;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialmedia-links-footer:hover {
+  background-color: var(--blue);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  color: white;
+}
+
+.socialmedia-icons-footer {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.socialmedia-icons-footer:hover {
+  fill: currentColor;
 }
 
 /* PORTFOLIO PAGE */
@@ -478,19 +613,4 @@ footer {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-}
-
-/* тест */
-.our-clients-list {
-  display: flex;
-}
-
-.our-clients-list li {
-  outline: 1px solid red;
-}
-
-.our-clients-icons {
-  width: 106px;
-  height: 60px;
-  fill: red;
 }
