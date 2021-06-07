@@ -141,6 +141,10 @@ a {
   color: var(--blue);
 }
 
+.on-this-page {
+  color: var(--blue);
+}
+
 /* Основная часть */
 body {
   font-family: var(--main-font);
@@ -149,7 +153,7 @@ body {
 
 /* Секция - главный посыл */
 .service {
-  background-color: var(--grey);
+  background-color: white;
 }
 
 .hero-section {
@@ -582,6 +586,8 @@ footer {
   margin-right: 30px;
   margin-bottom: 30px;
   border: solid 1px #f5f4fa;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-parts:nth-child(3n) {
